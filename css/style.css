@@ -1,0 +1,502 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BODY {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    color: #f1c40f;
+}
+
+.btn-1 {
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #f1c40f;
+    color: #2c3e50 !important;
+}
+
+.sec1 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./Recursos/FondoConsejero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.sec1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sec1 h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #f1c40f;
+}
+
+.sec1 img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    display: flex;
+}
+
+.line div {
+    flex: 1;
+}
+
+.line div:nth-child(1) {
+    background-color: #2c3e50;
+}
+
+.line div:nth-child(2) {
+    background-color: #f1c40f;
+}
+
+.line div:nth-child(3) {
+    background-color: #e74c3c;
+}
+
+.sec2 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.sec2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.sec2 .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.sec2 .container div {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.sec2 .container div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.sec2 .container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sec2 .container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.sec2 .container a {
+    color: #f1c40f;
+    font-size: 1.5rem;
+}
+
+.sec3, .mis, .vis, .obj {
+    width: 100%;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sec3 {
+    background-color: #f9f9f9;
+}
+
+.mis {
+    background-color: white;
+}
+
+.vis {
+    background-color: #f9f9f9;
+}
+
+.obj {
+    background-color: white;
+}
+
+.sec3 img, .mis img, .vis img, .obj img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sec3 div, .mis div, .vis div, .obj div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sec3 h1, .mis h1, .vis h1, .obj h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.sec3 p, .mis p, .vis p, .obj p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mis p, .vis p, .obj p {
+    font-style: italic;
+}
+
+.menu-section {
+    width: 100%;
+    padding: 50px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-card {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.sec4 {
+    width: 100%;
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sec4 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.sec4div {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.sec5 {
+    width: 100%;
+    padding: 50px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.sec5 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.sec5 .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.sec5 .container > div {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.sec5 h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.sec5 p, .sec5 pre {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sec5 form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sec5 input, .sec5 textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.sec5 textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.sec5 button {
+    padding: 12px 25px;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sec5 button:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.sec5 a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.sec5 a:hover {
+    color: #f1c40f;
+}
+
+footer {
+    width: 100%;
+    background-color: #1a252f;
+    color: white;
+}
+
+.footersec {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.frt1 {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f1c40f;
+}
+
+.ftr3, .ftr4 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ftr3 h4, .ftr4 h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.ftr4 div {
+    display: flex;
+    align-items: center;
+}
+
+.ftr4 input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.ftr4 i {
+    padding: 12px 15px;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ftr4 i:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.footersec2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #141e27;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sec1 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .sec1 img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+    }
+    
+    .sec3, .mis, .vis, .obj {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    
+    .sec3 img, .mis img, .vis img, .obj img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .menu-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sec5 .container > div {
+        text-align: center;
+    }
+    
+    .sec5 form {
+        margin-top: 30px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sec1, .sec2, .sec3, .mis, .vis, .obj, .menu-section, .sec4, .sec5 {
+    animation: fadeIn 1s ease-out;
+}
